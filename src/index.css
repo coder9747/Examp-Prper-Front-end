@@ -1,13 +1,98 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeedeb;
+  gap: 20px;
+}
+.content {
+  /* border: 2px solid red; */
+  min-width: 90vw;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+ 
+}
+.content p {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+select {
+  width: 80vw;
+  height: 30px;
+  border: 0;
+  background-color: #474f7a;
+  outline: none;
+  padding: 3px;
+  color: white;
+}
+select option {
+  color: white;
+}
+.front-end {
+  border: 2px solid red;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front-end input {
+  width: 300px;
+  height: 30px;
+  border: 2px solid gray;
+  outline: none;
+  padding-left: 20px;
+}
+.bg-red {
+  background-color: rgba(255, 0, 0, 0.308);
+}
+.bg-green {
+  background-color: rgba(0, 128, 0, 0.496);
+}
+.btn {
+  height: 40px;
+  width: 190px;
+  border-radius: 9px;
+  border: 1px solid gray;
+  outline: none;
+  background-color: rgb(83, 164, 83);
+}
+
+.result
+{
+  width: 100vw;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items:space-around;
+  padding: 20px 0px;
+}
+.result div{
+  height: 100px;
+  width: 100px;
+  border: 2px solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(2, 18, 18);
+  font-family: sans-serif;
 }
